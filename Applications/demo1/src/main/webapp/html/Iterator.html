@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iterator page</title>
+       <!--   <link rel="stylesheet" href="C:\Users\pavan\Downloads\spring-form1\spring-form1\src\main\webapp\login.css">-->
+
+    </head>
+    <body >
+    
+    <h1>Iteration of elements</h1>
+    <h2 th:text="${names}"></h2>
+    <ul>
+    <li th:each="n:${names}">
+    <span th:text="${n}"></span>
+    </li>
+    </ul>
+    </body>
+   </html>

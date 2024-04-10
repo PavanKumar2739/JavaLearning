@@ -1,0 +1,32 @@
+package ExamProblems;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class WordMinimumLen {
+	public static  int minMoves(String word) {
+		String [] charWords = word.split("");
+		List<String> listWords = Arrays.asList(charWords);
+		System.out.println((listWords));
+		int valInd = 0;
+		while(listWords.size()>=valInd){
+			List<String> subListChar = listWords.subList(valInd+1, listWords.size());
+			if(subListChar.indexOf(listWords.get(valInd))>0) {
+				System.out.print(valInd+1+subListChar.size());
+				System.out.println(listWords.size());
+			}
+			valInd++;
+		}
+		
+		return 0;
+	}
+	 public static void main(String[] args) {
+	        String[] examples = {"baabacaa", "babbaaa", "abaaa"};
+
+	        for (String word : examples) {
+	            int minMoves = minMoves(word);
+	            System.out.println("Word: " + word + ", Minimum number of moves: " + minMoves);
+	        }
+	    }
+
+}

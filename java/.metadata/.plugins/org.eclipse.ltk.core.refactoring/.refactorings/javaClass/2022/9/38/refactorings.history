@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;animal.java&apos; to &apos;javaClass/src/learn&apos;&#x0D;&#x0A;- Original project: &apos;javaClass&apos;&#x0D;&#x0A;- Destination element: &apos;javaClass/src/learn&apos;&#x0D;&#x0A;- Original element: &apos;overRidding.animal.java&apos;" description="Copy compilation unit" destination="/src&lt;learn" element1="/src&lt;overRidding{animal.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1663226151943" units="1" version="1.0"/>
+</session>

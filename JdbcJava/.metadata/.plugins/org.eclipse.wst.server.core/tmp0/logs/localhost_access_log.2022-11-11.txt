@@ -1,0 +1,4 @@
+127.0.0.1 - - [11/Nov/2022:13:54:46 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Nov/2022:13:54:47 +0530] "GET /Project_Server/form3.html HTTP/1.1" 200 284
+0:0:0:0:0:0:0:1 - - [11/Nov/2022:13:54:47 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Nov/2022:13:54:56 +0530] "GET /Project_Server/ms?name=pavan+kumar&age=44 HTTP/1.1" 200 -

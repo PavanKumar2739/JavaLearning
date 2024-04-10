@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.microService.empProject.SpringemployeeDetails.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="com.microservices.employee.employeedetails.repo.EmployeeRepository"/>
+    <fullyQualifiedTypeName name="com.microservices.employee.employeedetails.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="com.microservices.employee.employeedetails.payload.EmployeeDto"/>
+    <fullyQualifiedTypeName name="com.microservices.employee.employeedetails.entity.Employee"/>
+    <fullyQualifiedTypeName name="com.microservices.project.projectdetails.repo.ProjectRepository"/>
+    <fullyQualifiedTypeName name="com.microservices.project.projectdetails.service.ProjectService"/>
+    <fullyQualifiedTypeName name="com.microservices.project.projectdetails.entity.Project"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.ImportAutoConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignAutoConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
+    <fullyQualifiedTypeName name="com.microservices.employee.employeedetails.feignClient.ProjectFeign"/>
+    <fullyQualifiedTypeName name="feign.Response"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="com.microservices.employee.employeedetails.payload.Project"/>
+</qualifiedTypeNameHistroy>

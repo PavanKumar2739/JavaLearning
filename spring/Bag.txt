@@ -1,0 +1,55 @@
+{"id":1,
+  "brand":"skybag",
+  "price":500,
+  "book":{
+     "id":1,
+     "tittle":"science",
+      "author":"pavan"
+      
+        },
+    "pen":{
+        "id":1,
+        "brand":"cello",
+        "price":10
+         }
+
+   }
+
+
+
+HOSPITAL
+
+{
+"id":1,
+"name":"Apollo"
+"gst":"XYZ",
+"founder":"ABC",
+"branchs":[{"id":1,
+            "name":"Apollo Hyd",
+            "email":"ApolloHyd@gmail.com",
+		"phone":9235345,
+		"add":{"id":1,
+			 "place":"kukatpally",
+			 "state":"Telengana",
+			 "pin":500061}
+           },
+           {"id":2,
+            "name":"Apollo Bangalore",
+            "email":"ApolloBangalore@gmail.com",
+		"phone":887578,
+		"add":{"id":1,
+			 "place":"BTM",
+			 "state":"Karnataka",
+			 "pin":509878}
+           },
+           {"id":3,
+            "name":"Apollo Che",
+            "email":"ApolloChe@gmail.com",
+		"phone":97587777,
+		"add":{"id":1,
+			 "place":"chennai",
+			 "state":"Tamilnadu",
+			 "pin":59283}
+         }]
+
+}

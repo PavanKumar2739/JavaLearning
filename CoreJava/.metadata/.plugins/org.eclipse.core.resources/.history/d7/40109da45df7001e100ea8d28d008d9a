@@ -1,0 +1,12 @@
+package recursions;
+
+public class First {
+	public static void main(String[] args) {
+		//write a function that prints hello world
+		
+	}
+	static void message() {
+		System.out.println("Hello world..!");
+	}
+
+}

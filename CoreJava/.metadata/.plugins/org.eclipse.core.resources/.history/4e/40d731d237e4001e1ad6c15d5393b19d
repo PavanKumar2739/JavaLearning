@@ -1,0 +1,60 @@
+package ExamProblems;
+
+import java.util.*;
+import java.util.List;
+
+public class WordMinimumLen {
+	public static  int minMoves(String word) {
+		String [] charWords = word.split("");
+		List<String> listWords = new ArrayList<>(Arrays.asList(charWords));
+		System.out.println((listWords));
+		int valInd = 0;
+		int move = 0;
+		while(listWords.size()>valInd){
+			List<String> subListChar = new ArrayList<>(listWords.subList(valInd+1, listWords.size()));
+			int indexOfVal = subListChar.indexOf(listWords.get(valInd));
+			if(indexOfVal>=0) {
+				int indexOfMiddle = valInd+indexOfVal+1;
+				List<String> subListChar2 = new ArrayList<>(listWords.subList(indexOfMiddle+1, listWords.size()));
+				indexOfVal = subListChar2.indexOf(listWords.get(indexOfMiddle));
+				System.out.println("Value middle "+indexOfVal);
+				
+				if(indexOfVal>=0) {
+					int nextIndex = indexOfMiddle+indexOfVal;
+					listWords.remove(nextIndex);
+					
+				}
+				listWords.remove(valInd);
+				System.out.println("values after remove "+listWords);
+				move++;
+				valInd=0;
+				System.out.println("Size of both ");
+				System.out.println(valInd+1+subListChar.size());
+				System.out.println(listWords.size());
+				continue;
+				
+			}
+			valInd++;
+		}
+		
+		return move;
+	}
+//	public int getIndex(List<String>listWords) {
+//		int indexOfVal = subListChar.indexOf(listWords.get(valInd));
+//		if(indexOfVal>0) {
+//			int indexOfMiddle = (valInd+1)+indexOfVal;
+//			
+//		}
+//		return 0;
+//		
+//	}
+	 public static void main(String[] args) {
+	        String[] examples = {"baabacaa", "babbaaa", "abaaa"};
+
+	        for (String word : examples) {
+	            int minMoves = minMoves(word);
+	            System.out.println("Word: " + word + ", Minimum number of moves: " + minMoves);
+	        }
+	    }
+
+}

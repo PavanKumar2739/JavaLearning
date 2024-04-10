@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\programming\JdbcJava\spring-first\src\main\java\spring\di\verify.java"/>
+			<item value="D:\programming\JdbcJava\hibernate_cascade_MTO"/>
+			<item value="D:\programming\JdbcJava\hibernate_Bi_OTO\src\main\java\hibernate_Bi_OTO\Hospital.java"/>
+			<item value="D:\programming\JdbcJava\hibernate_MTM\src\main\java\hibernate_MTM\subjects.java"/>
+			<item value="D:\programming\JdbcJava\ApiTesting_p1\src\test\java\weatheraCheck\PostRequest.java"/>
+			<item value="D:\programming\JdbcJava\hibernate_relative\src\main\java\hibernate_relative\saveData.java"/>
+			<item value="D:\programming\JdbcJava\hibernate_jpa\src\main\resources\META-INF\persistence.xml"/>
+			<item value="D:\programming\JdbcJava\hibernate\src\main\java\org\hibernate"/>
+			<item value="D:\programming\JdbcJava\JDBC_Project\src\org\jdbc\insertingRows.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="spring-annotations"/>
+			<item value="spring-first"/>
+			<item value="second_levelCache"/>
+			<item value="hibernate-composite"/>
+			<item value="hibernate_update"/>
+			<item value="hibernate_cascade_MTO"/>
+			<item value="hibernate_fetch_MTM"/>
+			<item value="hibernate_Bi_OTO"/>
+			<item value="hibernate_MTM"/>
+			<item value="hibernate_OTM"/>
+			<item value="hibernate_relative"/>
+			<item value="hibernate_jpa"/>
+			<item value="person_hibernate"/>
+			<item value="org.hib"/>
+			<item value="ApiTesting_p1"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="spring-annotations"/>
+			<item value="spring-first"/>
+			<item value="second_levelCache"/>
+			<item value="hibernate-composite"/>
+			<item value="hibernate_update"/>
+			<item value="hibernate_cascade_MTO"/>
+			<item value="hibernate_fetch_MTM"/>
+			<item value="hibernate_Bi_OTO"/>
+			<item value="hibernate_MTM"/>
+			<item value="hibernate_OTM"/>
+			<item value="hibernate_relative"/>
+			<item value="hibernate_jpa"/>
+			<item value="person_hibernate"/>
+			<item value="hibernate"/>
+			<item value="ApiTesting_p1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\pavan\Downloads\spring-demo1"/>
+			<item value="D:\programming\JdbcJava\spring-learn"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

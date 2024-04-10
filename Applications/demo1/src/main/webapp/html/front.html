@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home page</title>
+        <link rel="stylesheet" href="C:\Users\pavan\Downloads\spring-form1\spring-form1\src\main\webapp\login.css">
+
+    </head>
+    <body >
+
+    <h1>About Spring Boot</h1>
+    <h3>Learning the course</h3>
+    <!-- --> <h4 th:text="${ #strings.toUpperCase(name) }"></h4>
+    <h4 th:text="${ #strings.length(name) } ">  </h4>
+    <h4 th:text="${currentDate}"></h4>
+    <h4>my name is <span th:text="${name}"></span> </h4>
+    
+    <div th:with="a=5,b=10, n=${name}">
+    <h5>value of a is <span th:text=${a}></span></h5>
+    <h5 th:text="'name is '+${n}"></h5>
+    
+    <h5 th:text="'sum of'+${a}+ 'and'+${b}+ 'is : '+ ${a+b}"></h5>
+    </div>
+
+    </body>
+</html>

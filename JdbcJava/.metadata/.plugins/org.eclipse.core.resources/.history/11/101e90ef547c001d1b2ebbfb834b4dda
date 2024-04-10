@@ -1,0 +1,5 @@
+package hibernate_cascade_update;
+
+public class saveFood {
+
+}

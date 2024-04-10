@@ -1,0 +1,18 @@
+sorting the array without using the java principles in built
+we just check across the each like of the array and push the highest value to last and in next loop nerver go till that point again, soo what does it means it means time saving.of o(n) times in best case array is alrady sorted no need to sort again so it returns 
+
+for(int i = 0; i< arr.length; i++){// it will take care each swap.. how many swaps happen
+	swapped = false;
+	for(int j =0; j<arr.length-i-1;j++){//here the real scnario happning like the i is the key here to avoid swapping if alrady done.
+		if(arr[j]>arr[j+1]){
+			 int temp = arr[j+1];
+		         arr[j+1] = arr[j];
+			 arr[j] = temp;
+			 swapped = true;
+			 
+}
+if(!swapped){
+	break;
+}
+}
+}
