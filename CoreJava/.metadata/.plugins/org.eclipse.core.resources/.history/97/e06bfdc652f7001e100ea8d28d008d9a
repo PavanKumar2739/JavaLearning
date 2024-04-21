@@ -1,8 +1,0 @@
-package InterviewQuestions;
-
-public abstract class MAin {
-	abstract public void method() {
-		
-	}
-
-}

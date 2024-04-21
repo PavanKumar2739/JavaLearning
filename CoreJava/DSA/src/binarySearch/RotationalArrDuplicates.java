@@ -4,9 +4,9 @@ public class RotationalArrDuplicates {
 
 	//this will not work for duplicate values
 	public static void main(String[] args) {
-		int []arr = {2,2,9,9,9,9,2};
+		int []arr = {9,9,9,9,1,2,2};
 		int t = 2;
-		int maxNumIndex = pivotIndexDuplicates(arr);
+		int maxNumIndex = pivot(arr);
 		System.out.println("Pivot "+maxNumIndex);
 		System.out.println("elemnt : ");
 		if(arr[maxNumIndex] == t)
@@ -100,5 +100,33 @@ public class RotationalArrDuplicates {
 			 return -1;
 		 }
 
+	 public static int pivot(int [] arr) {
+			int s = 0;
+			int e = arr.length-1;
+			while(s<=e) {
+				int m = s+(e-s)/2;
+				if(m<e&&arr[m]>arr[m+1]) {
+					return m;
+				}
+				else if(m>s && arr[m-1]>arr[m]) {
+					return m-1;
+				}else {
+					if(arr[m] == arr[s] && arr[m] == arr[e]) {
+						if(arr[s]<arr[s+1]) return s+1;
+						s++;
+						if(arr[e]<arr[e-1]) return e-1;
+						e--;
+					}
+					else {
+					if(arr[m]>arr[s] ||(arr[s]==arr[m] && arr[e]<arr[m])) {
+						s = m+1;
+					}else {
+						e = m-1;
+					}
+					}
+				}
+			}
+			return -1;
+		}
 
 }

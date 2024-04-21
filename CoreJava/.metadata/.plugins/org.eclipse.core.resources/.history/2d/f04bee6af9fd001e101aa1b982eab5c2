@@ -1,0 +1,8 @@
+package strings;
+
+public class Methods {
+	public static void main(String[] args) {
+		String name = "Pavan Kumar";
+	}
+
+}

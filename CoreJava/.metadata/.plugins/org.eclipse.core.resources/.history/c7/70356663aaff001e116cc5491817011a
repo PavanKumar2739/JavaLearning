@@ -1,0 +1,15 @@
+package multi_threading;
+
+public class Multi_ThreadRunable {
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+class Student implements Runnable{
+	@Override
+	public void run() {
+		System.out.println("Hello..! "+ Thread.currentThread().getName()+" >> id : "+Thread.currentThread().getId());
+	}
+}

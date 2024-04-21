@@ -1,0 +1,16 @@
+package multi_threading;
+
+public class Multi_ThreadAnonymous {
+	public static void main(String[] args) {
+		Runnable rn = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Anony 1..! "+ Thread.currentThread().getName()+" >> id : "+Thread.currentThread().getId());
+				
+			}
+			
+		};
+	}
+
+}

@@ -1,0 +1,10 @@
+package multi_threading;
+
+public class Multi_ThreadingFuncInt {
+	public static void main(String[] args) {
+		Runnable r1 = () -> System.out.println("Fun Int 1 "+ Thread.currentThread().getName()+" >> id : "+Thread.currentThread().getId());
+		Runnable r2 = () -> System.out.println("Fun Int 2 "+ Thread.currentThread().getName()+" >> id : "+Thread.currentThread().getId());
+		
+	}
+
+}

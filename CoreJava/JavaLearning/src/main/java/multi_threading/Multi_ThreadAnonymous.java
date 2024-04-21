@@ -1,0 +1,31 @@
+package multi_threading;
+
+public class Multi_ThreadAnonymous {
+	public static void main(String[] args) {
+		Runnable rn1 = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Anony 1..! "+ Thread.currentThread().getName()+" >> id : "+Thread.currentThread().getId());
+				
+			}
+			
+		};
+		Runnable rn2 = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Anony 2..! "+ Thread.currentThread().getName()+" >> id : "+Thread.currentThread().getId());
+				
+			}
+			 
+		};
+		
+		Thread t1 = new Thread(rn1,"Th1");
+		Thread t2 = new Thread(rn2,"Th2");
+		t1.start();
+		t2.start();
+		
+	}
+
+}
