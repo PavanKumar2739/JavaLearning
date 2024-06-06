@@ -33,6 +33,7 @@ public class LeetCodeProbs {
 	static boolean isEven2(int num) {
 		if(num<0) num*=-1;
 		int i = (int) Math.log10(num);
+		System.out.println("num "+i);
 		return ((int)(Math.log10(num))+1)%2==0;
 	}
 

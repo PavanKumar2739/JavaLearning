@@ -4,7 +4,7 @@ public class RotationalBinary {
 	
 	//this will not work for duplicate values
 	public static void main(String[] args) {
-		int []arr = {6,7,8,9,10,1,2,3,4,5};
+		int []arr = {6,1,2,3,4,5};
 		int t = 3;
 		int maxNumIndex1 = pivot(arr);
 		System.out.println("peekIndex "+maxNumIndex1);

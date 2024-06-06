@@ -1,0 +1,17 @@
+*** Soo when comes to S - single response principle ***
+1. a class should have only one reason to change
+
+2. the INvoice class is the combination of all different functions,
+soo there might be a chances we need to modify the different methods based on the situations.
+
+3. soo we have came up with a plan such a way that dividing each functionalities into small small pieces and keep that as a class
+this will leads to clear understanding of functionalities, maintainability, and easy to modify without distrubing other functionalities
+and follows the rules of solid principles.
+
+- Easy to maintain
+- Avoid Duplicates
+- Easy to understand
+- Flexible Software
+- Reduce Complexity
+
+if something need to be changed in printRules class that will not effect to others.
