@@ -2,3 +2,7 @@
 **/bin/
 **/.settings/
 
+/spring-microservices/.metadata
+/spring-microservices/.metadata
+/Applications/.metadata
+/Applications/.metadata

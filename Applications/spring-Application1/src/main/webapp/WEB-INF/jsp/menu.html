@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html>
+    <title>CIBO</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\91944\Pictures\vasu yadav.png">
+    <link rel="stylesheet" href="D:\programming\Applications\spring-Application1\spring-Application1\src\main\resources\static\css\meat 2.css"/>
+    <link rel="stylesheet" href="D:\programming\Applications\spring-Application1\spring-Application1\src\main\resources\static\css\menu.css"/>
+    <link rel="stylesheet" href="D:\programming\Applications\spring-Application1\spring-Application1\src\main\resources\static\css\meat.css"/>
+
+</head>
+<body onload="showModal()">
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils">cibo</i></a>
+    <nav class="navbar">
+    <a  class="active" href="#home">home</a>
+    <a href="#dishes">dishes</a>
+    <a href="#about">about</a>
+    <a href="#menu">menu</a>
+    <a href="#review">review</a>
+    <a href="#order">order</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a href="#" class="fas fa-heart" id="offer-icon"></a>
+        <i class="fas fa-shopping-cart"></i>
+        <button class="open-button" onclick="openForm()">
+            <i class='fa fa-address-book'></i>
+    </div>
+    </header>
+    
+    
+
+    <section style="background-color:var(--black)"  class="chat" id="myForm">
+        <div class="chat-popup">
+          <button class="astar" type="button" onclick="closeForm()"><i class='fa fa-times-rectangle'></i></button>
+             <center>my profile
+             </center>
+          
+  <div class="image-short">
+      <img src="C:\Users\91944\Pictures\WhatsApp Image 2023-02-28 at 19.08.40.jpg">
+          <h1>web developer</h1>
+          <button class="btn">edit</button>
+      </div>
+      <span>v vasu yadav</span>
+  <div class="notification">
+      <table>
+          <tr class="grid">
+              <td>
+          <i class="fas fa-border-all"><span>order</span></i>
+          <i class="fas fa-shield-heart"><span>likes list</span></i>
+          <i class="fas fa-gifts"><span>coupons</span></i>
+          </td>
+              <td>
+          <i class="far fa-bell"><span>Notifications</span></i>
+          <i class="fas fa-headset "><span>Help center</span></i>
+          <i class="far fa-bell"><span>orders</span></i>
+      </td>
+  </tr>
+  
+      </table> 
+      <div class="payment-section">
+          <div class="credit">
+          <i class="fa fa-credit-card"><abbr>card-details</abbr></i>
+          </div>
+          <h1>saved cards</h1>
+          <h1>add card</h1>
+          <div class="address">
+          <i class="fas fa-map-marker-alt"><abbr>location</abbr></i>
+          </div>
+          <h1>change address</h1>
+          <h1>change mobile-num</h1>
+            <div class="logout">
+          <i class="far fa-handshake"><abbr>log-out</abbr></i>
+            </div>
+      </div>
+      </div>
+      </section>
+  
+  
+    
+<section class="menu" id="menu">
+    <h3 class="sub-heading">our menu</h3>
+    <h1 class="heading">tody special</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="https://c1.wallpaperflare.com/preview/973/361/77/barbecue-meat-grill-grilled-meats.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>grill mutton</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">199/-</span>
+                  </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://c4.wallpaperflare.com/wallpaper/663/296/974/meat-food-meal-dinner-wallpaper-preview.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>mutton manjuri</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">299/-</span>
+                  </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://e0.pxfuel.com/wallpapers/303/489/desktop-wallpaper-mutton-tikka-biryani-mutton-biryani.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>mutton bhiriyani</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">399/-</span>
+                  </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/315/269/desktop-wallpaper-authentic-mutton-biryani-recipe-flavarich-mutton-biryani.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>mutton bhiriyani special</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">349/-</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://e0.pxfuel.com/wallpapers/498/672/desktop-wallpaper-tandoori-paneer-tikka-in-the-oven-my-food-story-chicken-tikka.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>paneer mutton fry</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">249/-</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://e0.pxfuel.com/wallpapers/656/834/desktop-wallpaper-craving-biryani-head-over-to-these-delectable-spots-in-mumbai-biriyani.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>mutton maha raja</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">599/-</span>
+                  </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://e0.pxfuel.com/wallpapers/729/326/desktop-wallpaper-chicken-tikka-masala.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>mutton butter curry</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">299/-</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://e0.pxfuel.com/wallpapers/793/379/desktop-wallpaper-non-veg-biryani-bollywood-cricket-travel-recipes-more-thumbnail.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div  class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="content">
+                    <h3>special dish</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+                  <a href="#" class="btn">add to cart</a>
+                  <span class="price">299/-</span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://media.gettyimages.com/id/679705480/photo/lamb-curry-meal-on-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=KscNa5BR-uEq9gKrWp1D248EotQY5HT0rzDUxpnshjE=" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div  class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="content">
+                <h3>mutton with chees</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">400/-</span>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://media.gettyimages.com/id/1352486099/photo/high-angle-view-of-food-in-bowl-on-table.jpg?s=612x612&w=0&k=20&c=1E0_YmVdXFJASkRv9G2Ooumwic9QzXDx92yviHp6TSg=" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div  class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="content">
+                <h3>gravy with extra masal</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">299/-</span>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4moMMD9bcGFLYBv_CgIsChgoWH8H8DLG0FdR-IjorDdcahWpgTVZtuaIj3ewWSaB7F8&usqp=CAU" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div  class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="content">
+                <h3>crazy spicey mutton curry</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">199/-</span>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx935e6jqT7o9r10NB-wDvZuV3P0b1CXCFRQ&usqp=CAU" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div  class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="content">
+                <h3>spicy mutton gravys</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores totam non, modi tenetur iure quibusdam explicabo voluptatem vitae alias cupiditate natus quod! Autem, obcaecati nemo eum commodi deserunt quos?</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">199/-</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        </div>
+        </div>
+</section>
+
+<section class="cibo">
+    <div class="box-container">
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#" >india</a>
+            <a href="#" >japan</a>
+            <a href="#" >russia</a>
+            <a href="#" >USA</a>
+            <a href="#" >france</a>
+            </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" >home</a>
+            <a href="#" >dishes</a>
+            <a href="#" >about</a>
+            <a href="#" >menu</a>
+            <a href="#" >orders</a>
+            <a href="#">reviews</a>
+        </div>
+    <div class="box">
+        <h3>contact info</h3>
+        <a href="#" >+91 9059341395</a>
+        <a href="#" >+123-456-7890</a>
+        <a href="#" >vasalavasuyadav@gmail.com</a>
+        <a href="#" >vasuyadav040502gmail.com</a>
+        <a href="#">Andhara,Udamalapadu,india</a>
+       
+        </div>
+    <div class="box">
+        <h3>follow us on</h3>
+        <a href="#" >facebook</a>
+        <a href="#" >istagram</a>
+        <a href="#" >twitter</a>
+        <a href="#" >whats app</a>
+        <a href="#">chrome</a>
+        </div>
+        </div>
+    <div class="credit">copyright @ 2022 by<span>mr.web designer</span> </div>
+    <H1> &#128525;Thanks for visiting our page &#128525;</H1>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      
+    </script>
+    
+    
+    
+    <script src="C:\Users\91944\Desktop\cards\meat2.jsx" ></script>
+    <script src="jquery.js" class="utf-8"></script>
+    
+    <script src="C:\Users\91944\Desktop\cards\poject\meat.js" ></script>
+</body>
+</html>

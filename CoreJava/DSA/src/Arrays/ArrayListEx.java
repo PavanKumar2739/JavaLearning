@@ -1,6 +1,8 @@
 package Arrays;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArrayListEx {
 	public static void main(String[] args) {
@@ -19,6 +21,14 @@ public class ArrayListEx {
 		System.out.println(array);
 		
 		System.out.println(array.get(0));
+		
+		Set<String> s = new HashSet<String>();
+		
+		s.add("ab");
+		s.add("ab");
+		
+		System.out.println(s.hashCode());
+
 		
 	}
 

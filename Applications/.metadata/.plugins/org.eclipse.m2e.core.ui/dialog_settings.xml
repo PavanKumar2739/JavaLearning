@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Programs\JavaLearning\Applications\spring-Application1"/>
 			<item value="D:\programming\Applications\irs"/>
 			<item value="D:\programming\Applications\movietickets"/>
 			<item value="D:\programming\Applications"/>

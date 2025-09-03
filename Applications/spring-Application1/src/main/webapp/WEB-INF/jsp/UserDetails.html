@@ -1,0 +1,48 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>home page</title>
+<!--  link rel="stylesheet" href="C:\Users\pavan\Downloads\spring-form1\spring-form1\src\main\webapp\login.css"-->
+<link rel="stylesheet" type="text/css" href="/css/userDetails.css"  />
+</head>
+<body>	
+
+	<div class="backgroundImg">
+		<div class="form-container">
+			<div class="form-wrapper">
+				<form action="/additionalDetails" method="post">
+					<h1 class="heading">Additional Details</h1>
+					<input type="email" name="email" th:value="${email}" class="email" required readonly />
+					<input type="number" name="mobileNumber"
+						placeholder="Mobile Number" autocomplete="off" class="mobileNumber" required />
+					
+					<div style="display:inline-block">
+						<input type="radio" id="male" name="gender" value="Male">
+						<label for="male">Male</label>
+					</div>
+					<div style="display:inline-block">
+						<input type="radio" id="female" name="gender" value="Female">
+						<label for="female">Female</label>
+					</div>
+					<div style="display:inline-block">
+						<input type="radio" id="other" name="gender" value="Other">
+						<label for="other">Other</label>
+					</div>
+	
+					<input type="text" name="address"
+						placeholder="Address" autocomplete="off" class="address"  required style=" height: 100px;"/>
+	
+					<button onclick="ok()" class="submit-btn">Continue To LogIn</button>
+					
+					<div class="error-message">
+						<span th:text="${msg}"></span>
+					
+				</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

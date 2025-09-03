@@ -7,7 +7,7 @@ import java.util.*;
 public class CyclicSort {
 	public static void main(String[] args) {
 		int [] arr = {4,5,2,1,3};
-		sort(arr);
+		sort1(arr);
 		System.out.println(Arrays.toString(arr));
 		System.out.println(findDisappearedNumbers(new int[] {4,3,2,7,8,2,3,1}));
 		
@@ -19,6 +19,19 @@ public class CyclicSort {
 			if(i != correct) {// the value which is going to swap and index value is same it will not work
 				swap(arr,i,correct);
 			}else {// increment when the correct and current index position is not same
+				i++;
+			}
+		}
+	}
+	
+	public static void sort1(int [] arr) {
+		for(int i =0;i<arr.length;) {
+			int correct = arr[i]-1;
+			if(correct!=i) {
+				int tmp = arr[i];
+				arr[i] = arr[correct];
+				arr[correct] = tmp;
+			}else {
 				i++;
 			}
 		}

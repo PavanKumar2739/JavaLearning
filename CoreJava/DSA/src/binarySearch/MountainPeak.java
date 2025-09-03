@@ -3,8 +3,10 @@ package binarySearch;
 public class MountainPeak {
 	public static void main(String[] args) {
 		int [] arr = {1,2,3,4,5,3,1};
-		int target = 3;
-		int peakIndex = indexOfpeak(arr);
+		int target = 4;
+		int peakIndex = findPeek1(arr);
+		
+		System.out.println(peakIndex);
 		int index = indexOfSmall(arr, target, 0, peakIndex);
 		if(index!=-1) {
 			System.out.println(index); ;
@@ -55,6 +57,18 @@ public class MountainPeak {
 		}
 		return -1;
 	}
-	
+	public static int findPeek1(int [] arr) {
+		int s = 0;
+		int e = arr.length-1;
+		while(s<e) {
+			int m = s+(e-s)/2;
+			if(arr[s]>arr[m]) {
+				e = m-1;
+			}else {
+				s = m+1;
+			}
+		}
+		return s;
+	}
 
 }
