@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import com.in28min.demo.looslycoupledgame.beans.GameRunner;
 import com.in28min.demo.looslycoupledgame.beans.GamingConsole;
 
-@Component
+@Component//this help to create a bean
 public class BusnissCalculation {
 	
 	DataSource dataSource;
@@ -24,7 +24,7 @@ public class BusnissCalculation {
 	
 	
 	public int findMaxValue() {
-		return Arrays.stream(dataSource.reriveData()).boxed().max((i1,i2)->i1.compareTo(i2)).get();
+		return Arrays.stream(dataSource.reriveData()).boxed().max((i1,i2)->i1.compareTo(i2)).orElse(0);
 	}
 	
 	
