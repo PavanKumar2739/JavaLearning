@@ -17,9 +17,11 @@ public class CheetSheet1 {
 		
 		List<Character> char1 = new ArrayList<>();
 		
+		//get the emp list 
 		List<Employee> filterList  = list.stream().filter(i->i.getName().startsWith("J")).collect(Collectors.toList());
 		
 		System.out.println(filterList);
+		
 		
 		Map<String, Long> deptInfo = list.stream().map(i->i.getDept()).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(deptInfo);

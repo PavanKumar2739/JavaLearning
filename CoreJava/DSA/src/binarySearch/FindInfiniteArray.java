@@ -32,8 +32,6 @@ public class FindInfiniteArray {
 		int count = 2;
 		while(arr[end]<target) {
 		
-			
-		
 			count*=count;
 		    start = end+1;
 		    end = count+start;
