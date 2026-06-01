@@ -41,6 +41,8 @@ public class CheetSheet1 {
 		
 		upperCase = Arrays.stream(lowerChar).map(String::toUpperCase).collect(Collectors.joining(""));
 		System.out.println(upperCase);
+		
+		
 	}
 
 }

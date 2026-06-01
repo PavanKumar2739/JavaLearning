@@ -18,8 +18,16 @@ public class Part1to10 {
 		System.out.println(stContainsVowels("Pspkq1a"));
 		System.out.println(stContainsVowelsCharApproach("Pspkq1"));
 		
+		//given number is prime or not
+		System.out.println("Given numer is Prime ; "+primeNumberCheck(73));
+		
+		//fibnocci numbers
+		System.out.println("fib ");
+		fiboncci(30);
+		
 	}
 	
+	//
 	public static String reverse(String s) {
 		
 		if (s == null)
@@ -80,6 +88,33 @@ public class Part1to10 {
 		}
 		return false;
 	
+	}
+	
+	//check prime number or not
+	public static boolean primeNumberCheck(int num) {
+		if(num == 1 || num == 2) return true;
+		
+		int num1 = num/2;
+		
+		for(int i = 2; i<num1;i++) {
+			if(num%i==0) return false;
+		}
+		
+		return true;
+		
+	}
+	
+	public static void fiboncci(int n) {
+		int a = 0;
+		int b = 1;
+		int c = 1;
+		for(int i = 0;i<n;i++) {
+			System.out.println(a+" ");
+			a = b;
+			b = c;
+			c = a+b;
+		}
+		
 	}
 
 }

@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+        
+        <bean id="name" class="java.lang.String">
+        	<constructor-arg value="Pavan"/>
+        </bean>
+        
+        <bean id="age" class="java.lang.String">
+        	<constructor-arg value="30"/>
+        </bean>
+        
+        <!--  <context:component-scan 
+         base-package="com.in28min.demo.looslycoupledgame.beans"/> -->
+        
+        <bean id = "game" class = "com.in28min.demo.looslycoupledgame.beans.MarioGame"></bean>
+        
+        <bean id = "gameRunner" class = "com.in28min.demo.looslycoupledgame.beans.GameRunner">
+        	<constructor-arg ref ="game"/>
+        </bean>
+        
+       
+
+</beans>
